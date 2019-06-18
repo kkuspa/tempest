@@ -16,10 +16,11 @@ const config = {
     {
      test: /\.jsx?/,
      loader: 'babel-loader',
-     exclude: /node_modules/,
-     query:{
-        presets: ['react','es2015']
-      }
+     exclude: /node_modules/
+    },
+    {
+    test: /\.css$/,
+    loader: 'style-loader!css-loader?modules'
     }]
    }
 };
